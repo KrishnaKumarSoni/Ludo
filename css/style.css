@@ -1,0 +1,318 @@
+*{
+    font-weight: 700;
+    list-style-type: none;
+    font-size: 14px;
+    padding: 0 0;
+}
+#peg, #peg2{
+    font-family:sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: black;
+    
+    position: absolute;
+}
+body{
+    margin: 0 0;
+    padding : 0 0;  
+    background-image: url('images/back2.jpg');
+    background-size: cover;
+}
+
+input[type="button"]{
+   outline:none;
+}
+input[type="button"]::-moz-focus-inner {
+   border: 0;
+}
+#peg{
+    top: 100px;
+    left: 100px;
+}
+
+#peg2{
+    top: 100px;
+    left: 600px;
+}
+
+.road1{
+    width:404px; 
+    height: 50px;
+    padding: 0 0;
+    position: absolute;
+    background: transparent;
+}
+.road11{ 
+    width:404px; 
+    height: 50px;
+    padding: 0 0;
+    position: absolute;
+    background: transparent;
+}
+.box, .box15{
+
+    display: inline-block;
+    margin-right: -3px;
+    padding-left: 0px;
+    border: 1px solid #cf9d55;
+    width: 48px;
+    /*box-shadow: 10px 10px 10px black;*/
+    height: 48px;
+    background: #fcc97e;
+}
+.road3{
+    position: absolute;
+    left: 353px;
+    top: 51px;
+    background: transparent;
+}
+.box3{
+    border: 1px solid #cf9d55;
+    /*box-shadow: 10px 10px 10px black;*/
+    width: 49px;
+    height: 48px;
+    margin-bottom: 1px;
+    background: #fcc97e;
+}
+.box2{
+    display: block;
+    background: #fcc97e;
+    /*box-shadow: 10px 10px 10px rgb(1, 1,);*/
+    border: 1px solid #cf9d55;
+    padding: 0 0;
+    margin-bottom: 1px;
+    width: 48px;
+    height: 48px;
+}
+#box1x, #box50{
+    background: transparent;
+    box-shadow: none;
+    border: none;
+}
+#box1{
+    border: none;
+}
+.Ainitial{
+    background-color: #6b270d;
+}
+.Afinal{
+    background-color: #8c3a1a;
+}
+.Binitial{
+    background-color: #c1852a;
+}
+.Bfinal{
+    background-color: #dda34b;
+}
+.playground{
+    position: relative;
+    width: 404px;
+    height: 408px;
+    margin-left: 120px;
+    background-size: auto;
+}  
+
+#player{
+    width: 25px;
+    height: 25px;
+    margin-left: 12px;
+    margin-top: 12px;
+    position: absolute;
+    background: orange;
+    top: 00px;
+}
+
+.DICE{    height: 132px;
+    width: 130px;
+    position: absolute;
+    top: 140px;
+    left: 139px;
+}
+#WhoseTurn{
+    font-family: 'Kaushan Script', cursive;
+    text-shadow: 1px 1px 3px #6B270D;
+    text-shadow: -1px -1px 3px black;
+    font-size: 18px;
+    line-height: 10px;
+    text-align: center;
+    padding-top: 15px;
+    height: 29px;
+    margin: 0 0;
+}
+
+#Rollbtn{
+    font-family: 'Kaushan Script', cursive;
+    text-shadow: 0px 0px 10px black;
+    font-size: 20px;
+    background-color: #421f00;
+    background-image: url("https://transparenttextures.com/patterns/handmade-paper.png");
+    box-shadow: 0px 2px 10px #000;
+    border: none; 
+    font-weight: 700;
+    height: 50px;
+    width: 80px;
+    border-radius: 50px;
+    margin-left: 25px;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    text-indent: -5px;
+}
+#rollOutcome{
+    font-family: 'Kaushan Script', cursive;
+    text-shadow: 1px 1px 3px #6B270D;
+    text-shadow: -1px -1px 3px black;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    height: 27px;
+    padding-top: 15px;
+    margin-top: 38px;
+}
+
+#lockerA, #lockerB{
+    font-family: 'Kaushan Script', cursive;
+    text-shadow: 1px 1px 10px black;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 13px;
+    line-height: 0px;
+    height: 62px;
+    width: 75px;
+    border-radius: 37.5px;
+    position: relative;
+    cursor: pointer;
+}
+#playerNameA, #playerNameB{
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 700;
+    font-size:28px;
+    margin-top: 22px;
+    margin-left: -5px;
+}
+#lockerA{
+    background-color: #6b270d;
+    background-image: url("https://transparenttextures.com/patterns/black-felt.png");
+    box-shadow: 0px 2px 10px #000;
+    background-color: #6B270D;
+    color: #000;
+    margin-left: 10px;
+    margin-top: -240px;
+}
+
+#lockerB{
+
+    background-color: #c1852a;
+    background-image: url("https://transparenttextures.com/patterns/black-felt.png");
+    box-shadow: 0px 2px 10px #000;
+    background-color: #C1852A; 
+    color: 000;  
+    margin-left: 33%;
+    left: 350px;
+    margin-top: -75px;
+}
+
+#controller{
+    width: 50px;
+    position: absolute;
+    z-index: 2;
+    top: 100px;
+    left: 170px;
+}
+/*PLAYER PEGS*/
+#pegA1, #pegA0{
+    border-radius: 12.5px;
+    position: absolute;
+    background-color: #5b1900;
+    background: radial-gradient(circle, #5b3500, #5b1900, black);
+    box-shadow: inset 0 0 10px #000000;
+    margin-top: 11px;
+    margin-left: 11px;
+    display: none;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#pegB1, #pegB0{
+    border-radius: 12.5px;
+    position: absolute;
+    background-color: #ffa928;
+    background: radial-gradient(circle, #ff9000, #ffa928, black);
+    box-shadow: inset 0 0 10px #000000;
+    margin-top: 11px;
+    margin-left: 11px;
+    display: none;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#game{
+    width: 660px;
+    height: 408px;
+    position: static;
+    top: 0;
+    left: 0;
+    margin-top: 92px;
+    margin-left: 350px;
+}
+#roll{
+    z-index: -2;
+}
+
+#controller{
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2); 
+    font-family: 'Kaushan Script', cursive;
+    text-shadow: 1px 1px 3px #6B270D;
+    text-shadow: -1px -1px 3px black;
+    font-size: 18px;
+    color: black;
+    border: none;
+    text-indent: 3px;
+    top: 120px;
+    left: 180px;
+    border-radius: 5px;
+}
+
+input[type="text"]{
+   outline:none;    color: black;
+    border-radius: 5px;
+
+}
+input[type="text"]::-moz-focus-inner {
+   border: 0;    color: black;
+    border-radius: 8px;
+
+}
+
+canvas{
+    height: 306px;
+    width: 306px;
+    background-color: #6d6d6d;
+    z-index: 1;
+    position: absolute;
+    top: 142px;
+    left: 520px;
+    background: transparent;
+}
+
+.rules{
+    position: absolute;
+    font-family: 'Gloria Hallelujah', cursive;
+    line-height: 18px;
+    color: rgba(255, 230, 210, 0.9);
+    text-shadow: 1px 1px 1px #6B270D;
+    z-index: -3; 
+    width: 150px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-left: 18px;
+    border-radius: 10px;
+    border: 10px solid rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 50px black inset;
+    box-shadow: 0px 0px 50px black;
+    padding: 0 10px;
+    top: 48px;
+    list-style-type: none;
+}

@@ -1,0 +1,133 @@
+<html>
+<head>
+    <title>THE MAZE GAME.</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Kaushan+Script" rel="stylesheet">
+</head><!-- 
+onload="appearLocker(); appearBoxes()" -->
+
+<body onload="appearLocker(); appearBoxes()">
+
+    <div id="pegB0" style="position: absolute; top: 0px; left: 0px; height: 25px; width: 25px; margin-top: 11px; margin-left: 11px;" onclick="activate(this.id)"></div>
+
+
+    <div id="pegA0" style="position: absolute; top: 0px; left: 0px; height: 25px; width: 25px; margin-top: 11px; margin-left: 11px;" onclick="activate(this.id)"></div>
+
+
+    <div id="pegB1" style="position: absolute; top: 0px; left: 0px; height: 25px; width: 25px; margin-top: 11px; margin-left: 11px;" onclick="activate(this.id)"></div>
+
+
+    <div id="pegA1" style="position: absolute; top: 0px; left: 0px; height: 25px; width: 25px; margin-top: 11px; margin-left: 11px;" onclick="activate(this.id)"></div>
+
+<div class="rules">
+            <ul>
+                <li> Press ROLL button to roll the dice.</li><br>
+                <li> Click on your locker to unlock the token.</li><br>
+                <li> Click on Your token to move it.</li><br>
+                <li> Each token is supposed to complete one full round in order to become free.</li><br>
+                <li> Since the game is meant for testing, an input field is being provided to enter the desired outcome of dice, if wanted.</li><br>
+            </ul>
+        </div>
+    <div id="game" style="position: static; top: 1000px; left: 0px;">
+        <img src="images/roll2.png" id="roll" style = "position: absolute; top: 0px; left: 0;">
+        
+        <div class="playground" id="playgroundid" style="position: relative;">
+            <div class="road1">
+                <div id="box1" class = "box Ainitial"></div>
+                <div id="box2" class = "box"></div>
+                <div id="box3" class = "box"></div>
+                <div id="box4" class = "box"></div>
+                <div id="box5" class = "box"></div>
+                <div id="box6" class = "box"></div>
+                <div id="box7" class = "box"></div>
+                <div id="box8" class = "box"></div>
+            </div>
+            <div class="road11">
+                <div id="box29" class = "box Ainitial"></div>
+                <div id="box30" class = "box"></div>
+                <div id="box31" class = "box"></div>
+                <div id="box32" class = "box"></div>
+                <div id="box33" class = "box"></div>
+                <div id="box34" class = "box"></div>
+                <div id="box35" class = "box"></div>
+                <div id="box36" class = "box"></div>
+            </div>
+
+            <div class="road3">
+                <div id="box9" class = "box3"></div>
+                <div id="box10" class = "box3"></div>
+                <div id="box11" class = "box3" ></div>
+                <div id="box12" class = "box3"></div>
+                <div id="box13" class = "box3"></div>
+                <div id="box14" class = "Bfinal box3"></div>
+            </div>
+            <div class="road3">
+                <div id="box37" class = "box3"></div>
+                <div id="box38" class = "box3"></div>
+                <div id="box39" class = "box3" ></div>
+                <div id="box40" class = "box3"></div>
+                <div id="box41" class = "box3"></div>
+                <div id="box42" class = "Bfinal box3"></div>
+            </div>      
+
+            <div class="road2">
+                <div id="box1x" class = "box2"></div>
+                <div id="box28" class = "Afinal box2"></div>
+                <div id="box27" class = "box2"></div>
+                <div id="box26" class = "box2"></div>
+                <div id="box25" class = "box2"></div>
+                <div id="box24" class = "box2"></div>
+                <div id="box23" class = "box2"></div>
+            </div>    
+
+            <div class="road1">
+                <div id="box50" class = "box"></div>
+                <div id="box49" class = "box"></div>
+                <div id="box48" class = "box"></div>
+                <div id="box47" class = "box"></div>
+                <div id="box46" class = "box"></div>
+                <div id="box45" class = "box"></div>
+                <div id="box44" class = "box"></div>
+                <div id="box43"class = "Binitial box15" ></div>
+            </div>
+            <div class="road1">
+                <div id="box22" class = "box"></div>
+                <div id="box21" class = "box"></div>
+                <div id="box20" class = "box"></div>
+                <div id="box19" class = "box"></div>
+                <div id="box18" class = "box"></div>
+                <div id="box17" class = "box"></div>
+                <div id="box16" class = "box"></div>
+                <div id="box15"class = "Binitial box15" ></div>
+            </div>
+
+
+
+
+            <input type="text" placeholder="1 to 6" max = "6" min = "1" maxlength="1" id="controller">
+            <!--DICE OUTOMES AND TURN DISPLAY-->
+            <div class = "DICE">
+
+                <div id="whoseTurn">TURN: Player A</div>
+                <input type="button" id="rollBtn" onclick="roll()" value = "ROLL!">
+                <div id="rollOutcome">*</div>
+            </div>
+        </div>
+
+        <!--LOCKERS-->
+        <div id="lockerA" onclick = "play()">
+
+            <p id="playerNameA">2A</p>
+        </div>
+        <div id="lockerB" onclick = "play()">
+            <p id="playerNameB">2B</p>
+        </div>
+    </div>
+    <canvas><canvas>
+        <script src="java/script.js" ></script>    
+        <!-- <script src="roll.js" ></script> -->
+    </body>    
+    
+    
+    </html>
